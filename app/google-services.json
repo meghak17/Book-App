@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310334481191",
+    "project_id": "book-app-7dcd4",
+    "storage_bucket": "book-app-7dcd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310334481191:android:b2bc19e2cc332c59803f02",
+        "android_client_info": {
+          "package_name": "com.megha.bookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrmWFoKTIVZLvxTjNNxgDMh1K2SkIDHiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
