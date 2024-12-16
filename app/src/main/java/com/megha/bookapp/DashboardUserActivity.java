@@ -2,7 +2,6 @@ package com.megha.bookapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,12 +36,9 @@ public class DashboardUserActivity extends AppCompatActivity {
         checkUser();
 
         //handle click ,logout
-        binding.logoutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                firebaseAuth.signOut();
-                checkUser();
-            }
+        binding.logoutBtn.setOnClickListener(v -> {
+            firebaseAuth.signOut();
+            checkUser();
         });
 
     }

@@ -27,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.megha.bookapp.databinding.ActivityLoginBinding;
 
+/** @noinspection ALL*/
 public class LoginActivity extends AppCompatActivity {
 
     //view binding
@@ -140,6 +141,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(new Intent(LoginActivity.this, DashboardAdminActivity.class));
                             finish();
                         }
+
                     }
 
                     @Override

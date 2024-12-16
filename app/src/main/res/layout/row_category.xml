@@ -5,7 +5,9 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:contentPadding="10dp"
+    app:cardCornerRadius="8dp"
     app:cardUseCompatPadding="true"
+    app:cardElevation="0dp"
     app:cardBackgroundColor="@color/white">
 
     <LinearLayout
@@ -18,7 +20,7 @@
             android:id="@+id/categoryTv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Category Title"
+            android:text="@string/category_title"
             android:layout_weight="1"
             android:textColor="@color/black"/>
 
@@ -28,7 +30,7 @@
             android:layout_height="40dp"
             android:background="@drawable/shape_button03"
             android:src="@drawable/ic_delete_white"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
 
     </LinearLayout>

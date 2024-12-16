@@ -21,8 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.megha.bookapp.databinding.ActivityCategoryAddBinding;
 
 import java.util.HashMap;
-import java.util.Objects;
 
+/** @noinspection ALL*/
 public class CategoryAddActivity extends AppCompatActivity {
 
     //view binding
@@ -62,12 +62,7 @@ public class CategoryAddActivity extends AppCompatActivity {
         });
 
         //handle click,begin upload category
-        binding.submitBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                validateData();
-            }
-        });
+        binding.submitBtn.setOnClickListener(v -> validateData());
     }
 
     private String category="";

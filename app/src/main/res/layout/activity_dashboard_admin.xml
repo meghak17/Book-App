@@ -10,7 +10,7 @@
 
     <!--Toolbar-->
     <RelativeLayout
-        android:id="@+id/toolbarRlayout"
+        android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@drawable/shape_toolbar02">
@@ -48,16 +48,33 @@
 
 
     </RelativeLayout>
+    <!--search-->
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_search_gray"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColorHint="#AFAEAE"
+        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
     <!--Categories-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoriesRv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/row_category"
-        android:layout_below="@+id/toolbarRlayout"
+        android:layout_below="@+id/searchEt"
         android:layout_margin="5dp"
+        android:visibility="visible"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_above="@+id/bottomLl"/>
+        android:layout_above="@+id/bottomLl"
+        tools:ignore="UnknownIdInLayout" />
 
 
     <LinearLayout
@@ -75,13 +92,14 @@
             android:id="@+id/addCategoryBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+ Add Category"
+            android:text="@string/add_category"
             android:layout_weight="1"
             android:layout_marginEnd="10dp"
             android:background="@drawable/shape_button"
             android:minHeight="50dp"
             android:textAllCaps="false"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            tools:ignore="InefficientWeight,VisualLintButtonSize" />
 
         <!--Add PDF-->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -92,7 +110,7 @@
             android:src="@drawable/ic_pdf_add_white"
             app:fabCustomSize="50dp"
             app:tint="@color/white"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     </LinearLayout>
 </RelativeLayout>
